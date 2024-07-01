@@ -1,5 +1,5 @@
 # Strapi-RCE
-Exploit script showcasing a mixture of CVE-2019-18818 and CVE-2019-19609 for unauthenticated remote code execution in Strapi CMS.
+Exploit script showcasing a mixture of [CVE-2019-18818](https://www.exploit-db.com/exploits/5023) and [CVE-2019-19609](https://www.exploit-db.com/exploits/50238) for unauthenticated remote code execution in Strapi CMS.
 
 ## Exploit
 
@@ -8,8 +8,6 @@ This script exploits a vulnerability in Strapi CMS versions 3.0.0-beta.17.4 and 
 ## Description
 
 The exploit works by first leveraging a password reset vulnerability to obtain a JSON Web Token (JWT) for an administrative user. This token is then used to send a malicious payload to the Strapi CMS, which triggers a reverse shell back to the attacker's machine.
-
-## How to Use
 
 ## How to Use
 
