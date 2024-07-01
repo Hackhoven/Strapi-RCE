@@ -7,10 +7,6 @@ import requests
 import json
 import sys
 
-import requests
-import json
-import sys
-
 if len(sys.argv) != 4:
     print("[-] Incorrect number of arguments provided.")
     print("[*] Usage: python3 strapi-rce.py <TARGET_URL> <LHOST> <LPORT>\n")
